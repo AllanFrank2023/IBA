@@ -1,0 +1,12 @@
+int_students = 0
+b_run = True
+
+while(b_run):
+    try:
+        print(int_students)
+        4/int_students
+        b_run = False
+    except ZeroDivisionError:
+        print("Dumme udvikler")
+        int_students = 2
+        
