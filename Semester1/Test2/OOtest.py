@@ -1,7 +1,7 @@
 # Velkomst
 print("Velkommen til lommeregneren!")
 
-while
+while True:
     # Valgmulighederne
     print("Vælg en regnemetode:")
     print("1. Addition, 2. Subtraktion, 3. Multiplikation, 4. Division")
@@ -16,8 +16,8 @@ while
         break
 
     # Indtast to tal
-    tal1 = float(input("Indtast det første tal: "))
-    tal2 = float(input("Indtast det andet tal: "))
+    tal1 = int(input("Indtast det første tal: "))
+    tal2 = int(input("Indtast det andet tal: "))
     if tal1 > 15 and tal2 > 15:
         print("over 4 bits")
 

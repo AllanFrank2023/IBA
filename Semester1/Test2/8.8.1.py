@@ -27,7 +27,7 @@ print("Det", n,".th Fibonacci nummer er: ", result)
 
 
 def generate_fibonacci(limit):
-    fibonacci_numbers = [1, 1]
+    fibonacci_numbers = [1,1]
     while True:
         next_fib = fibonacci_numbers[-1] + fibonacci_numbers[-2]
         if next_fib <= limit:

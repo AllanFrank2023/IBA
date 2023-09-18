@@ -31,9 +31,12 @@ else:
 
 
      # Beregner dagen
-    
+    ########fejl
     day_num = (28 * (month -1)) + day 
-    day_num = day_num + skuddag
+    for i in range(month - 1):
+     #day_num += days_in_month[i]
+     #day_num = days_in_month(month)
+     day_num = day_num + skuddag + day
     
     #Beregner Opgave B
 if month > 3:
