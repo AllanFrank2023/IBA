@@ -11,15 +11,17 @@ while True:
     valg = input("Indtast dit valg (1/2/3/4): ")
 
     # Afslut programmet ved valg udenfor 1-4
-    if valg > '4':
+    if valg > '4' or valg < '0':
         print("Ugyldigt valg. Prøv igen.")
         break
 
     # Indtast to tal
-    tal1 = int(input("Indtast det første tal: "))
-    tal2 = int(input("Indtast det andet tal: "))
-    if tal1 > 15 and tal2 > 15:
-        print("over 4 bits")
+    tal1 = float(input("Indtast det første tal: "))
+    tal2 = float(input("Indtast det andet tal: "))
+ ##   if tal1 > 15 and tal2 > 15:
+ ##   print("over 4 bits")
+    if tal1 == str and tal2 == str:
+        print ("Ugyldig indtastning")
 
     # Udfør og viser resultatet
     if valg == '1':
