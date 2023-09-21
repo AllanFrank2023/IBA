@@ -1,12 +1,41 @@
-int_students = 0
-b_run = True
+#int_students = 0
+#b_run = True
 
-while(b_run):
-    try:
-        print(int_students)
-        4/int_students
-        b_run = False
-    except ZeroDivisionError:
-        print("Dumme udvikler")
-        int_students = 2
+#while(b_run):
+#    try:
+#        print(int_students)
+#        4/int_students
+#        b_run = False
+#    except ZeroDivisionError:
+#        print("Dumme udvikler")
+#        int_students = 2
         
+
+def word_count(filename):
+    try:
+        with open(filename.txt, "W") as file:
+            lines = file.readlines()
+            num_lines = len(lines)
+            num_words = sum(len(line.split()) for line in lines)
+            num_chars = sum(len(line) for line in lines)
+
+        print("Number of lines:", num_lines)
+        print("Number of words:", num_words)
+        print("Number of characters:", num_chars)
+
+    except FileNotFoundError:
+        print(f"Error: The file", filename, "was not found.")
+    except Exception as e:
+        print(f"An error occurred:", str(e))
+
+
+#def main():
+# Input the filename from the user
+filename = input("Enter the filename: ")
+
+
+# Call the word_count function to count lines, words, and characters
+word_count(filename)
+
+#def main()
+ #   word_count(fwc)
