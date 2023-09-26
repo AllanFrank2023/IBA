@@ -11,6 +11,10 @@
 #To get out...
 #Of the rain.
 #Boom! Boom! Boom!
+#
+#Sang et er en gentagelse af sangen med de forskellige dele af sangen sammensat via funktion
+#Sang 2, er der sammensat så tallene skifterlig med loop
+
 
 
 
@@ -33,7 +37,32 @@ def songP2():
     print("In the ground...")
     print("To get out....")
     print("Of the rain.")
-    print("Boom! Boom! Boom!")
+    print("Boom! Boom! Boom!\n\n")
+
+def sang2(n):
+    activities = [
+    "suck his thumb",
+    "tie his shoe",
+    "climb a tree",
+    "shut the door",
+    "take a dive",
+    "pick up sticks",
+    "pray to heaven",
+    "shut the gate",
+    "check the time",
+    "say 'The End'"]
+
+
+    for i in range(n):
+        print("The ants go marching ", i + 1, "by", i + 1, "hurrah! hurrah!")
+        print("The ants go marching ", i + 1, "by ", i + 1, "hurrah! hurrah!")
+        print("The ants go marching ", i + 1, "by", i + 1)
+        print("The little one stops to ", activities[i])
+        print("And they all go marching down... In the ground...")
+        print("To get out... Of the rain.")
+        print("Boom! Boom! Boom!\n")
+
+    
 
 def main():
  
@@ -43,13 +72,13 @@ def main():
 # Print the requested number of songs with Functions
     for i in range(1, n + 1):
         sangen()
+        
         print("Nummer: ", i)
         print(" ")
+    sang2(n)
 main()
        
 
         
     ######Færdig    
 
-
-    
