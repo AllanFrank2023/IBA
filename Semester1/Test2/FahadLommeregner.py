@@ -1,4 +1,4 @@
-#Lommeregner Fahad gruppen
+#Lommeregner simpel
 #
 # 
 
