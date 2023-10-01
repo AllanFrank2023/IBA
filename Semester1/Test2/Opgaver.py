@@ -9,6 +9,7 @@ def file_oprettelse():
         print("File", filename, "er oprettet.\n\n")
         valg = input(print("Vil du tilføje indhold til filen? ja eller nej \n"))
         if valg.lower() == "ja":
+            print("errer")
             add_indhold_file(filename)
         else:
             print("Test 22222")
